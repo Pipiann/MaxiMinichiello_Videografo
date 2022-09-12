@@ -30,7 +30,7 @@
 
 }
 
-/*barra redes sociales izquierda  */
+/*---------------------barra redes sociales izquierda ----------------- */
 .nav_ul_vertical{
     list-style-type: none;
     /* background-color: #d8f3dc; */
@@ -47,18 +47,51 @@
     justify-content: space-between;
     
 }
+/* -----------------animacion redes sociales ---------------------
+*/
 
-/* footer */
+.icon:hover i {
+  animation: shake .25s;
+}
+
+@keyframes shake {
+  10% {
+      transform: rotate(15deg);
+  }
+
+  20% {
+      transform: rotate(-15deg);
+  }
+
+  30% {
+      transform: rotate(15deg);
+  }
+
+  40% {
+      transform: rotate(-15deg);
+  }
+}
+  
+/* ---------------------footer------------------------------- */
 footer{
     background-color: #d8f3dc;
     opacity: 0.5;
     height: 75px;
-    
+  }
 
-}
 footer h2{
     font-family: 'Inter', sans-serif;
     text-align: end;
     padding-top: 1rem;
+  
+}
+.footer_contacto{
+  text-decoration-line: none;
+}
 
+/* ----------------------------SOBRE MI-------------- */
+.sobremi_imagen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

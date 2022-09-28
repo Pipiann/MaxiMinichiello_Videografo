@@ -1,0 +1,13 @@
+/* -----------------portfolio con grid --------------------*/
+
+.portoGrid{
+ @extend disposicionportfolio;
+ grid-template-columns: 0.2fr 0.5fr 0.5fr;
+ grid-template-rows: 0.2fr 0.2fr 0.2fr;
+ grid-column-gap: 10px;
+ grid-row-gap: 15px;
+ grid-template-areas: "header header header" "navi videos1 videos2" "footer footer footer";
+
+
+
+}

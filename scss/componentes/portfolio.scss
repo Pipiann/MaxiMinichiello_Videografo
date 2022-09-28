@@ -1,13 +1,36 @@
-/* -----------------portfolio con grid --------------------*/
 
-.portoGrid{
- @extend disposicionportfolio;
- grid-template-columns: 0.2fr 0.5fr 0.5fr;
+.portfoGrid{
+ @extend %disposicionportfolio;
+ grid-template-columns: 0.2fr 0.4fr 0.4fr;
  grid-template-rows: 0.2fr 0.2fr 0.2fr;
  grid-column-gap: 10px;
  grid-row-gap: 15px;
  grid-template-areas: "header header header" "navi videos1 videos2" "footer footer footer";
+ &_Header{
+  grid-area: header;
+  background-color: map-get($portfolioVideo, bg-Video);
+ }
+ &_Nav{
+  grid-area: navi;
+ }
+ &_Videos1{
+  grid-area: videos1;
+  background-color: map-get($portfolioVideo, bg-Video);
+ }
+ &_Videos2{
+  grid-area: videos2;
+  background-color:map-get($portfolioVideo, bg-Video);
+ }
+ &_Foot{
+  grid-area: footer;
+
+ }
+}
+ 
 
 
 
+
+.portGridFoot {
+  grid-area: footer;
 }

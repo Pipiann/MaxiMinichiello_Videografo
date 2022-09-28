@@ -1,7 +1,9 @@
 @import "base/variables";
 @import "base/maps";
 @import "base/extend";
+@import "base/mixin.scss";
 @import "componentes/portfolio";
+
 
 
 
@@ -89,10 +91,8 @@
       
   /* ---------------------footer------------------------------- */
   footer{
-    background-color: $color_nav;
-    opacity: 0.5;
-    height: 75px;
-    h2{
+    @include footer();
+        h2{
         font-family: $font-principal;
         text-align: end;
         padding-top: 1rem;

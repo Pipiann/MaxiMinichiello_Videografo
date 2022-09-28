@@ -1,3 +1,39 @@
+.portfoGrid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.portfoGrid {
+  grid-template-columns: 0.2fr 0.4fr 0.4fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  grid-template-areas: "header header header" "navi videos1 videos2" "footer footer footer";
+}
+.portfoGrid_Header {
+  grid-area: header;
+  background-color: rgb(180, 240, 180);
+}
+.portfoGrid_Nav {
+  grid-area: navi;
+}
+.portfoGrid_Videos1 {
+  grid-area: videos1;
+  background-color: rgb(180, 240, 180);
+}
+.portfoGrid_Videos2 {
+  grid-area: videos2;
+  background-color: rgb(180, 240, 180);
+}
+.portfoGrid_Foot {
+  grid-area: footer;
+}
+
+.portGridFoot {
+  grid-area: footer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -105,58 +141,6 @@ footer h2 {
   align-items: center;
 }
 
-/* -----------------portfolio con grid --------------------*/
-#portfoGrid {
-  display: grid;
-  grid-template-columns: 0.2fr 0.5fr 0.5fr;
-  grid-template-rows: 0.2fr 0.2fr 0.2fr;
-  justify-items: center;
-  align-items: center;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
-  grid-template-areas: "header header header" "navi videos1 videos2" "footer footer footer";
-}
-
-.portGridHeader {
-  grid-area: header;
-  background-color: rgb(180, 240, 180);
-}
-
-.portGridNav {
-  grid-area: navi;
-}
-
-.portGridVideos1 {
-  grid-area: videos1;
-  background-color: rgb(180, 240, 180);
-}
-
-.portGridVideos2 {
-  grid-area: videos2;
-  background-color: rgb(180, 240, 180);
-}
-
-.portGridFoot {
-  grid-area: footer;
-}
-
-@media screen and (max-width: 576px) {
-  .portGridFoot {
-    justify-content: center;
-    flex-direction: column;
-  }
-  #portfoGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.4fr 1fr 1fr 0.4fr;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas: "header" "navi" "videos1" "videos2" "footer";
-  }
-  .portGridNav {
-    flex-direction: row;
-    justify-items: center;
-  }
-}
 /* ------------------------mediaquerieindex y sobre mi----------- */
 @media screen and (max-width: 576px) {
   .nav_vertical {

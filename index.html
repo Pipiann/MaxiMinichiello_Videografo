@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a0c3887c23.js" crossorigin="anonymous"></script>
     <link
     rel="stylesheet"
@@ -22,7 +23,7 @@
 <body >
     <nav class="navbar navbar-expand-lg container-propio-fuentes navbar-propio  col-12 .text-body">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./pages/contacto.html">Maxi Minichiello</a>
+          <a class="navbar-brand" href="./pages/contacto.html"><img src="./imagenes/AF_MaxiM72dpi_Logo.png" alt="Maxi Minichiello videógrafo de bodas, eventos y publicidad"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,7 +31,7 @@
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
+              </li>                 
               <li class="nav-item">
                 <a class="nav-link active" href="../Maxi-web-version3/pages/sobremi.html">Sobre Mí</a>
               </li>
@@ -58,11 +59,20 @@
     <div>
         <video src="./videos/video background.mp4" autoplay loop muted poster="" title="Video de boda soñada" class="Video__Fondo"></video>
     </div>
-    <!-------LINEA VERTICAL Y BARRA DE REDES SOCIALES VERTICAL --------------->
+  <div class="grid-container">
+
+        <!-------LINEA VERTICAL  --------------->
   
-    <div class="v-line">
+    <div class="v-line col-3">
     </div>
-    <div class="nav_ul"> 
+
+    <!-- --------------------- TEXTO PRINCIPAL --------------------->
+    <div class="texto-index col-10">
+      <h1>AMAMOS CONTAR HISTORIAS</h1>
+    </div>
+  
+<!---------------------BARRA DE REDES SOCIALES VERTICAL------------------>
+    <div class="nav_ul col-3"> 
       <nav>
         <ul >
           <li class="nav_ul_vertical"><a href="https://www.youtube.com/channel/UCzsJJd7JXcfBHLLMWT4gFBQ/null" target="_blank" class="icon"><i class="fa-brands fa-youtube fa-4x"></i></a></li>
@@ -72,11 +82,21 @@
         </ul>
       </nav>
     </div>
+
+  </div>  
   
     
     <!------------------------ FOOTER ------------------------------->
   <footer>
-      <div>
+    <div class="nav_ul_footer"> 
+      
+      <a href="https://www.youtube.com/channel/UCzsJJd7JXcfBHLLMWT4gFBQ/null" target="_blank" class="icon nav_ul_vertical"><i class="fa-brands fa-youtube fa-4x"></i></a>
+      <a href="https://www.instagram.com/maxi.minichiello/" target="_blank" class="icon nav_ul_vertical" ><i class="fa-brands fa-instagram fa-4x"></i></a>
+      <a href="https://www.facebook.com/people/Maxi-Minichiello-Realizador-audiovisual/100063672745098/" target="_blank" class="icon nav_ul_vertical"><i class="fa-brands fa-facebook fa-4x"></i></a>
+      <a href="https://wa.me/5491132924100" target="_blank" class="icon nav_ul_vertical"><i class="fa-brands fa-whatsapp fa-4x"></i></a>
+            
+    </div >
+      <div class= "footer_position_text">
         <a href="./pages/contacto.html" class="footer_contacto"><h2 class="animate__animated animate__headShake">Maxi Minichiello </h2></a>
 
       </div>

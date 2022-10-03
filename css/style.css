@@ -45,6 +45,12 @@
   font-size: 28px;
   padding-right: 3rem;
 }
+@media screen and (max-width: 576px) {
+  .container-propio-fuentes {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+  }
+}
 
 .navbar-propio {
   background-color: #d8f3dc;
@@ -52,15 +58,22 @@
 }
 .navbar-propio-items {
   position: absolute;
-  top: 0;
+  top: 70px;
   right: 32px;
+}
+@media screen and (max-width: 576px) {
+  .navbar-propio-items {
+    position: absolute;
+    top: 140px;
+    right: 32px;
+  }
 }
 
 .navbar-propio-bg-portfo {
   opacity: 1;
 }
 
-/* Video Fondo */
+/*------------------------- Video Fondo--------------------------*/
 .Video__Fondo {
   position: fixed;
   min-width: 100%;
@@ -71,39 +84,54 @@
   z-index: -1;
 }
 
+/*--------------------INDEX POSITION --------------------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1FR, 3FR;
+  grid-template-rows: 1FR, 3FR;
+  column-gap: 20px;
+  grid-template-areas: "linea texto" "barra texto";
+}
+
 /*---------------------barra redes sociales izquierda ----------------- */
 .v-line {
   border-left: thick inset #d8f3dc;
   height: 100%;
-  left: 3.5%;
+  left: 85%;
   position: relative;
   height: 50px;
   width: 50px;
+  grid-area: linea;
+}
+@media screen and (max-width: 576px) {
+  .v-line {
+    display: none;
+  }
 }
 
 .nav_ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  height: 570px;
+  width: 100px;
+  margin-left: 0px;
+  padding: 80px;
+  grid-area: barra;
 }
 @media screen and (max-width: 576px) {
   .nav_ul {
-    display: inline;
+    display: none;
   }
 }
 .nav_ul_vertical {
   list-style-type: none;
-  /* background-color: #d8f3dc; */
   opacity: 0.5;
-  height: 200px;
-  width: 75px;
-  margin-left: 0px;
-  padding: 4px;
 }
-@media screen and (max-width: 576px) {
-  .nav_ul_vertical {
-    display: inline;
+
+.nav_ul_footer {
+  display: inline;
+}
+@media screen and (min-width: 576px) {
+  .nav_ul_footer {
+    display: none;
   }
 }
 
@@ -144,15 +172,61 @@ footer h2 {
   padding-top: 1rem;
   padding-right: 3rem;
 }
+@media screen and (max-width: 576px) {
+  footer h2 {
+    position: fixed;
+    bottom: 923px;
+  }
+}
+footer h2_position_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 200px;
+}
 
 .footer_contacto {
   text-decoration-line: none;
 }
 
+/*------------------------TEXTO INDEX----------------------*/
+.texto-index {
+  grid-area: texto;
+  justify-self: end;
+}
+.texto-index h1 {
+  font-family: "Libre Franklin", sans-serif;
+  color: aliceblue;
+  font-size: 150px;
+  text-align: end;
+  padding-right: 3rem;
+  padding-top: 3rem;
+}
+
 /* ----------------------------SOBRE MI-------------- */
+.v-line-sobremi {
+  border-left: thick inset #d8f3dc;
+  height: 100%;
+  margin-left: 7%;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+@media screen and (max-width: 576px) {
+  .v-line-sobremi {
+    display: none;
+  }
+}
+
 .sobremi__textonuevo {
   font-family: "Inter", sans-serif;
   font-size: 28px;
+}
+@media screen and (max-width: 1710px) {
+  .sobremi__textonuevo {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .sobremi_imagen {
@@ -163,43 +237,18 @@ footer h2 {
   /* height: 600px;
   width: 600px; */
 }
+@media screen and (max-width: 1710px) {
+  .sobremi_imagen {
+    height: 300px;
+    width: 300px;
+  }
+}
 
 /* ---------------contacto-------------------- */
 .contacto_propio {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* ------------------------mediaquerieindex y sobre mi----------- */
-@media screen and (max-width: 576px) {
-  .nav_vertical {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .nav_ul_vertical {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .nav_vertical_media {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-  .container-propio-fuentes {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 1710px) {
-  .sobremi__textonuevo {
-    display: flex;
-    flex-direction: row;
-  }
-  .sobremi_imagen {
-    height: 300px;
-    width: 300px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
